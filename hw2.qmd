@@ -45,11 +45,11 @@ canvas_collatz(
   n = 10
 )
 ```
-The canvas_collatz function draws the collatz conjecture on a canvas, taking into account the arguments. In the code chunk above, the argument 'color' specifies what color will be used when the function maps the conjecture, in this case, blue. In addition, the 'n' argument is the positive integer that determines how many random starting integers will be used to draw the lines , which is 10 for the code chunk above.
+The canvas_collatz function draws the collatz conjecture on a canvas, taking into account the arguments. In the code chunk above, the argument 'color' specifies what color will be used when the function maps the conjecture, in this case, blue. In addition, the 'n' argument is the positive integer that determines how many random starting integers will be used to draw the lines, which is 10 for the code chunk above.
 
 #### b
 
-There is a different output every time the code is ran because only the number of random integers is changed. Therefore the integers itself are still random, meaning there will be a very unlikely chance of generating two identical images
+There is a different output every time the code is ran because only the number of random integers can be changed. Therefore the integers itself are still random, meaning there will be a very unlikely chance of generating two identical images
 
 This might be troublesome when trying to put the code in the qmd file because every output is different, meaning that whichever image you are attempting to display will come out differently when rendered again.
 
@@ -65,7 +65,7 @@ canvas_collatz(
 
 \newpage
 
-#### Question 4
+## Question 4
 
 ```{r}
 canvas_collatz(
