@@ -7,11 +7,29 @@ author:
 ---
 
 ## Question 1
+
 ```{r}
 #| eval: False
 
 install.packages("aRtsy")
 ```
+
 install.packages installs the package and all of its content onto the computer. On the otherhand, library loads an installed package into the current document or the code chunk, making it easier to access.
 
+\newpage
 
+# Packages
+
+## Question 2
+
+```{r}
+library(aRtsy)
+```
+
+The collatz conjecture is an unsolved math problem that asks if any positive number can be brought down to 1 by repeating only two rules
+
+$n$ = chosen number
+
+if $n$ is even, $n/2$
+
+if $n$ is odd, $3n +1$
