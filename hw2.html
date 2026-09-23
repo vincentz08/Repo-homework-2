@@ -156,6 +156,47 @@ window.Quarto = {
 <p><span class="math inline">\(n\)</span> = chosen number</p>
 <p>if <span class="math inline">\(n\)</span> is even, <span class="math inline">\(n/2\)</span></p>
 <p>if <span class="math inline">\(n\)</span> is odd, <span class="math inline">\(3n +1\)</span></p>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="question-3" class="level2">
+<h2 class="anchored" data-anchor-id="question-3">Question 3</h2>
+<section id="a" class="level4">
+<h4 class="anchored" data-anchor-id="a">a</h4>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">canvas_collatz</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">colors =</span> <span class="fu">c</span>(<span class="st">"blue"</span>),</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">n =</span> <span class="dv">10</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="hw2_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The canvas_collatz function draws the collatz conjecture on a canvas, taking into account the arguments. In the code chunk above, the argument ‘color’ specifies what color will be used when the function maps the conjecture, in this case, blue. In addition, the ‘n’ argument is the positive integer that determines how many random starting integers will be used to draw the lines , which is 10 for the code chunk above.</p>
+</section>
+<section id="b" class="level4">
+<h4 class="anchored" data-anchor-id="b">b</h4>
+<p>There is a different output every time the code is ran because only the number of random integers is changed. Therefore the integers itself are still random, meaning there will be a very unlikely chance of generating two identical images</p>
+<p>This might be troublesome when trying to put the code in the qmd file because every output is different, meaning that whichever image you are attempting to display will come out differently when rendered again.</p>
+<p>The set.seed function makes the random number generator the same every time since it gives it the same starting value every time</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">8</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">canvas_collatz</span>(</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">colors =</span> <span class="fu">c</span>(<span class="st">"blue"</span>),</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">n =</span> <span class="dv">10</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="hw2_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
 </section>
 </section>
 

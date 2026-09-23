@@ -1,6 +1,6 @@
 ---
 title: "Homework 2"
-format: html
+format: pdf
 editor: visual
 author: 
   name: Vincent Zheng
@@ -33,3 +33,35 @@ $n$ = chosen number
 if $n$ is even, $n/2$
 
 if $n$ is odd, $3n +1$
+
+\newpage
+
+## Question 3
+
+#### a
+```{r}
+canvas_collatz(
+  colors = c("blue"),
+  n = 10
+)
+```
+The canvas_collatz function draws the collatz conjecture on a canvas, taking into account the arguments. In the code chunk above, the argument 'color' specifies what color will be used when the function maps the conjecture, in this case, blue. In addition, the 'n' argument is the positive integer that determines how many random starting integers will be used to draw the lines , which is 10 for the code chunk above.
+
+#### b
+
+There is a different output every time the code is ran because only the number of random integers is changed. Therefore the integers itself are still random, meaning there will be a very unlikely chance of generating two identical images
+
+This might be troublesome when trying to put the code in the qmd file because every output is different, meaning that whichever image you are attempting to display will come out differently when rendered again.
+
+The set.seed function makes the random number generator the same every time since it gives it the same starting value every time
+
+```{r}
+set.seed(8)
+canvas_collatz(
+  colors = c("blue"),
+  n = 10
+)
+```
+
+\newpage
+
