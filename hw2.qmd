@@ -1,0 +1,17 @@
+---
+title: "Homework 2"
+format: html
+editor: visual
+author: 
+  name: Vincent Zheng
+---
+
+## Question 1
+```{r}
+#| eval: False
+
+install.packages("aRtsy")
+```
+install.packages installs the package and all of its content onto the computer. On the otherhand, library loads an installed package into the current document or the code chunk, making it easier to access.
+
+
