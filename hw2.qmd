@@ -65,3 +65,13 @@ canvas_collatz(
 
 \newpage
 
+#### Question 4
+
+```{r}
+canvas_collatz(
+  colors = c("blue"),
+  n = 1:20
+)
+```
+
+The main difference in the code here and the one in the previous chunk is that this code does not need a set.seed function to generate the same image every time. However, instead of n being a single number, n in this code chunk is every number from 1 to 20, meaning that it is not choosing 10 random integers, rather the chosen integers are 1 to 20 and are already set
